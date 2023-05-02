@@ -54,12 +54,32 @@ public class AdvancePatterns {
             i++;
         }
     }
+    public static void leftTriangleAlphaPatt(int n)
+    {
+        int i=1;
+        char ch='A';
+
+        while(i<=n)
+        {
+            int j=1;
+            while(j<=i)
+            {
+                System.out.print(ch+" ");
+                j++;
+                ch++;
+            }
+            System.out.println();
+            i++;
+        }
+    }
     public static void main(String[] args) {
        alphabetSquareRow(5); 
        System.out.println("----------------"); 
        alphabetSquarePatt(5);     
        System.out.println("-------------------"); 
        alphabetSquarePatt2(5);
+       System.out.println("-------------------"); 
+       leftTriangleAlphaPatt(5);
     }
     /*
      OUTPUT:-
@@ -82,5 +102,11 @@ public class AdvancePatterns {
      C D E F G 
      D E F G H 
      E F G H I
+     -------------------
+     A 
+     B C 
+     D E F 
+     G H I J 
+     K L M N O 
      */
 }
